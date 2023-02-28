@@ -5,7 +5,7 @@ public class reto7 {
         
         Scanner lectura = new Scanner(System.in);
 
-        int precioCompra, colorbolita, rojo, azul, amarillo;
+        int precioCompra, colorbolita, rojo, rojo1, azul, azul1, amarillo, amarillo1;
 
         System.out.println("Ingrese el precio de su compra");
         precioCompra= lectura.nextInt();
@@ -18,27 +18,33 @@ public class reto7 {
 
         amarillo = (precioCompra / 100) * 50;
 
+        rojo1 = precioCompra - rojo;
+
+        azul1 = precioCompra - azul;
+
+        amarillo1 = precioCompra - amarillo;
+
         if(precioCompra > 50000){
 
             switch(colorbolita){
                 case 1:
 
                 System.out.println("Su bolita es de color rojo, felicidades obtienes el 10% de descuento");
-                System.out.println("El valor total de su compra es de: " + rojo);
+                System.out.println("El valor total de su compra es de: " + rojo1);
 
                 break;
 
                 case 2:
                 
                 System.out.println("Su bolita es de color azul, felicidades obtienes el 30% de descuento");
-                System.out.println("El valor total de su compra es de: " + azul);
+                System.out.println("El valor total de su compra es de: " + azul1);
 
                 break;
 
                 case 3:
                 
                 System.out.println("Su bolita es de color amarilla, felicidades obtienes el 50% de descuento");
-                System.out.println("El valor total de su compra es de: " + amarillo);
+                System.out.println("El valor total de su compra es de: " + amarillo1);
 
                 break;
 
