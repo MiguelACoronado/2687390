@@ -29,5 +29,7 @@ public class Reto5 {
 
         System.out.println(sSubCadena + apellido.toLowerCase());
 
+        lectura.close();
+
     }
 }
